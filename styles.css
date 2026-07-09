@@ -1,3 +1,12 @@
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-green: hsl(75, 94%, 57%);
+    --color-gray-700: hsl(0, 0%, 20%);
+    --color-gray-800: hsl(0, 0%, 12%);
+    --color-gray-900: hsl(0, 0%, 8%);
+    --color-attrBlue: hsl(228, 45%, 44%);
+}
+
 @font-face {
     font-family: 'Inter';
     src: url(assets/fonts/static/Inter-Regular.ttf);
@@ -18,33 +27,94 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Inter';
-    background-color: #141414;
+    background-color: var(--color-gray-900);
+    width: 100%;
+    height: 100%;
 }
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .3125rem;
+    height: fit-content;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 24rem;
+    width: 90%;
+    background-color: var(--color-gray-800);
+    padding: 2rem;
+    border-radius: 5px;
+    gap: 1rem;
 }
 
 img{
     border-radius: 100px;
+    width: 6rem;
+}
+
+p, h2{
+    color: var(--color-white);
 }
 
 p{
-    color: white;
+    font-size: .875rem;
+}
+
+.name-location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.fullName{
+    font-weight: 600;
+    margin: unset;
+}
+
+.location{
+    color: var(--color-green);
+    font-weight: 600;
+    margin: unset;
+}
+
+.quote{
+    font-weight: 400;
 }
 
 .links-container{
-    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    color: var(--color-white);
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    background-color: var(--color-gray-700);
+    padding: .75rem;
+    width: 18rem;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.social-link:hover{
+    background-color: var(--color-green);
 }
 
 .attribution {
-    color: white;
-    font-size: 0.6875rem; text-align: center;
+    color: var(--color-white);
+    font-size: 0.6875rem; 
+    text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-attrBlue);
 }
