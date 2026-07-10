@@ -31,9 +31,9 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: 'Inter';
-    background-color: var(--color-gray-900);
+    background-color: var(--color-white);
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 main{
@@ -41,21 +41,21 @@ main{
     flex-direction: column;
     align-items: center;
     height: fit-content;
+    max-width: 21.5rem;
     text-wrap: wrap;
     overflow-wrap: break-word;
     margin-top: auto;
     margin-bottom: auto;
-    max-width: 24rem;
-    width: 90%;
     background-color: var(--color-gray-800);
-    padding: 2rem;
-    border-radius: 5px;
-    gap: 1rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    gap: .75rem;
 }
 
 img{
-    border-radius: 100px;
-    width: 6rem;
+    border-radius: 50%;
+    width: 4.5rem;
+    margin-bottom: .5rem;
 }
 
 p, h2{
@@ -76,23 +76,28 @@ p{
 .fullName{
     font-weight: 600;
     margin: unset;
+    font-size: 1.2rem;
 }
 
 .location{
     color: var(--color-green);
     font-weight: 600;
     margin: unset;
+    font-size: .7rem;
 }
 
 .quote{
     font-weight: 400;
+    font-size: .7rem;
+    margin-bottom: .5rem;
 }
 
 .links-container{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    gap: .7rem;
     color: var(--color-white);
+    width: 100%;
 }
 
 .social-link{
@@ -100,14 +105,18 @@ p{
     justify-content: center;
     font-weight: 600;
     background-color: var(--color-gray-700);
-    padding: .75rem;
-    width: 18rem;
-    height: fit-content;
-    border-radius: 5px;
+    padding: .7rem;
+    width: 100%;
+    min-height: fit-content;
+    border-radius: 8px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: .875rem;
 }
 
 .social-link:hover{
     background-color: var(--color-green);
+    color: var(--color-gray-900);
 }
 
 .attribution {
