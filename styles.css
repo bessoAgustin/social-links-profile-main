@@ -50,7 +50,7 @@ main{
     overflow-wrap: break-word;
     margin-block: auto;
     background-color: var(--color-gray-800);
-    padding: 2rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem); 
     border-radius: 8px;
     gap: .75rem;
 }
@@ -109,7 +109,7 @@ p{
     justify-content: center;
     font-weight: 600;
     background-color: var(--color-gray-700);
-    padding: .7rem;
+    padding: clamp(0.7rem, 2vw, 1rem); 
     width: 100%;
     min-height: fit-content;
     border-radius: 8px;
