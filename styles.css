@@ -51,14 +51,14 @@ main{
     margin-block: auto;
     background-color: var(--color-gray-800);
     padding: clamp(1.5rem, 4vw, 2.5rem); 
-    border-radius: 8px;
+    border-radius: 12px;
     gap: .75rem;
 }
 
 img{
     border-radius: 50%;
-    width: 4.5rem;
-    margin-block-end: .5rem;
+    width: 5.5rem;
+    margin-block-end: clamp(0.5rem, 1.5vw, 1rem); 
 }
 
 p, h1{
@@ -77,22 +77,22 @@ p{
 }
 
 .fullName{
-    font-weight: 600;
+    font-weight: 700;
     margin: unset;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .location{
     color: var(--color-green);
     font-weight: 600;
     margin: unset;
-    font-size: .7rem;
+    font-size: 0.875rem;
 }
 
 .quote{
     font-weight: 400;
-    font-size: .7rem;
-    margin-block-end: .6rem;
+    font-size: 0.875rem;
+    margin-block-end: clamp(0.6rem, 2vw, 1.2rem); 
 }
 
 .links-container{
@@ -100,7 +100,7 @@ p{
     flex-direction: column;
     gap: .8rem;
     color: var(--color-white);
-    width: 90%;
+    width: 100%;
     align-items: center;
 }
 
@@ -115,7 +115,8 @@ p{
     border-radius: 8px;
     color: var(--color-white);
     text-decoration: none;
-    font-size: .7rem;
+    font-size: 0.875rem;
+    box-sizing: border-box;
 }
 
 .social-link:hover{
