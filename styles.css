@@ -45,7 +45,8 @@ main{
     align-items: center;
     height: fit-content;
     width: 90%;
-    max-width: 15rem;
+    /* 👇 Kept at 15rem exactly as requested */
+    max-width: 15rem; 
     text-wrap: wrap;
     overflow-wrap: break-word;
     margin-block: auto;
@@ -66,7 +67,8 @@ p, h1{
 }
 
 p{
-    font-size: .875rem;
+    /* 👇 Scales smoothly from 12px on small screens to 14px on larger screens */
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
 }
 
 .name-location{
@@ -79,19 +81,20 @@ p{
 .fullName{
     font-weight: 700;
     margin: unset;
-    font-size: 1.5rem;
+    /* 👇 Scales smoothly from 20px to 24px */
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
 }
 
 .location{
     color: var(--color-green);
     font-weight: 600;
     margin: unset;
-    font-size: 0.875rem;
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
 }
 
 .quote{
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
     margin-block-end: clamp(0.6rem, 2vw, 1.2rem); 
 }
 
@@ -115,7 +118,7 @@ p{
     border-radius: 8px;
     color: var(--color-white);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
     box-sizing: border-box;
 }
 
@@ -126,7 +129,7 @@ p{
 
 .attribution {
     color: var(--color-white);
-    font-size: 0.6875rem; 
+    font-size: clamp(0.6rem, 1.5vw, 0.6875rem); 
     text-align: center;
 }
 .attribution a {
