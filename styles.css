@@ -45,8 +45,7 @@ main{
     align-items: center;
     height: fit-content;
     width: 90%;
-    /* 👇 Kept at 15rem exactly as requested */
-    max-width: 15rem; 
+    max-width: 16rem;
     text-wrap: wrap;
     overflow-wrap: break-word;
     margin-block: auto;
@@ -67,7 +66,6 @@ p, h1{
 }
 
 p{
-    /* 👇 Scales smoothly from 12px on small screens to 14px on larger screens */
     font-size: clamp(0.75rem, 2vw, 0.875rem);
 }
 
@@ -81,7 +79,6 @@ p{
 .fullName{
     font-weight: 700;
     margin: unset;
-    /* 👇 Scales smoothly from 20px to 24px */
     font-size: clamp(1.25rem, 4vw, 1.5rem);
 }
 
